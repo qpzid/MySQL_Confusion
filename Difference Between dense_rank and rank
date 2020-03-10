@@ -1,0 +1,3 @@
+When ties happen, the next rank after tie
+dense_rank: will be the rank of tie + 1
+rank: will be the rank of tie + # of numbers tied
