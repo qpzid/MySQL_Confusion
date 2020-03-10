@@ -1,0 +1,5 @@
+SELECT column 
+FROM table
+LIMIT M OFFSET N
+
+It will return M results starting on record N+1 and finishing on record M+N.
