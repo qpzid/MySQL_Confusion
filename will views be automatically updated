@@ -1,0 +1,4 @@
+A view is basically a stored query, it holds no data so no, it won't get updated when the tables it's built on are. 
+However as soon as you reference the view the query it's based on will run, 
+so you will see the changes made to the base tables.
+
