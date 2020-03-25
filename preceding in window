@@ -1,0 +1,14 @@
+有一个表是 
+date, device (echo/dot), answers
+2019-01-01 echo 10
+2019-01-02 echo 20
+2019-01-03 echo 30
+.
+.
+.
+2019-01-01 dot 10
+2019-01-02 dot 10
+问by decive， trailing 7 days的 answer总和是什么, 其实就是想得到一个 date, device, trailing 7 days’answers 这样一个目标表
+
+select date, device, sum(answers) over (partition by device order by date rows 7 following)
+from table;
